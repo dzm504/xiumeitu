@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 1211px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+#logo img{
+    width: 220px;
+    vertical-align: middle;
+    float: left;
+}
+#logo h1{
+    float: left;
+    font-size: 35px;
+    margin-left: 10px;
+    border-left: 1px solid #333;
+    padding:5px 15px;
+    margin-top: 40px;
+}
+#container{
+    position: absolute;
+    left: 50%;
+    top:0;
+    margin-left: -300px;
+    margin-top: 180px;
+    width: 600px;
+    background: rgba(255,255,255,0.8);
+    padding: 10px 10px;
+    text-align: center;
+    border:1px solid transparent;
+    border-radius: 5px;
+    color: #333;
+}
+#container h1{
+    margin-bottom: 20px;
+}
+#main_regist{
+    position: relative;
+    background: url("../images/bj_zhuce.jpg") no-repeat;
+    margin-bottom: -3px;
+}
+div.register{
+    padding:10px;
+    text-align: left;
+}
+div.form_group{
+    margin-bottom: 10px;
+}
+div.form_group input:not([type='checkbox']){
+    height: 25px;
+    width: 180px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+#code{
+    width: 80px;
+    vertical-align: middle;
+}
+#verification{
+    padding-left: 85px;
+    padding-top: 15px;
+    vertical-align: bottom;
+}
+#verification~a{
+    color: #227caa;
+}
+input[type='checkbox']{
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+}
+div.form_group input[type='button']{
+    background: #5CB85C;
+    color:#fff;
+    height:29px;
+    width: 182px;
+    margin-left: 85px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+div.form_group span{
+    display: inline-block;
+    width: 85px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+}
+div.form_group b{
+    border-radius:5px;
+    font-weight:normal;
+    display: none;
+    font-size: 14px;
+}

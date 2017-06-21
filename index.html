@@ -1,0 +1,580 @@
+<!doctype html>
+<html>
+	<head>
+		<title>我的博客</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/blog.css">
+	</head>
+	<body>
+		<!--登陆对话框-->
+		<div class="modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="bj_left">
+						<h2>用户登录</h2>
+						<div class="msg-wrap">
+							<div class="msg-warn"><b></b>公共场所不建议自动登录，以防账号丢失</div>
+							<div class="msg-error"><b></b></div>
+						</div>
+						<form id='login-form'>
+							<label for="uname">用户名</label><br>
+							<input id="uname" name="username"><br>
+							<label for="upwd">密码</label><br>
+							<input id="upwd" name="userpwd" type='password'><br>
+							<div class="checkbox"><label><input id="isRem" type="checkbox"/>记住用户名</label></div>
+							<input type="button" id="btLogin" value="登陆">
+						</form>
+					</div>
+					<div class="bj_right">
+						<p>使用以下账号直接登录</p>
+						<a href="#" class="zhuce_qq">QQ注册</a>
+						<a href="#" class="zhuce_wb">微博注册</a>
+						<a href="#" class="zhuce_wx">微信注册</a>
+					</div>
+					<div class="close">&times;</div>
+				</div>
+			</div>
+		</div>
+		<header id="top">
+			<img src="images/logo.png">
+			<ul class="top_box">
+				<li><a id="login" href="#"><img src="images/user.png">[登陆]</a></li>
+				<li><a href="regist.html"><img src="images/tag.png">[注册]</a></li>
+				<li><a href="#"><img src="images/home.png">收藏本站</a></li>
+				<li><a href="#"><img src="images/comment 2.png">联系我们</a></li>
+			</ul>
+			<div id=""></div>
+		</header>
+		<nav id="nav">
+			<span></span>
+			<ul class="list">
+				<li><a href="#">首 页</a></li>
+				<li><a href="#">唯 美</a></li>
+				<li><a href="#">插 画</a></li>
+				<li><a href="#">美 女</a></li>
+				<li><a href="#">萌 宠</a></li>
+				<li><a href="#">可 爱</a></li>
+				<li><a href="#">动 漫</a></li>
+			</ul>
+			<button class="search" type='submit'></button>
+			<input type="text" placeholder="search here...">
+		</nav>
+		<div id="banner">
+			<div class='wrapper'>
+				<div id='slider'>
+					<ul id='img'>
+						<li class="parent"><img src="images/slide1.jpg" alt=""></li>
+						<li><img src="images/slide2.jpg" alt=""></li>
+						<li><img src="images/slide3.jpg" alt=""></li>
+						<li><img src="images/slide4.jpg" alt=""></li>
+						<li><img src="images/slide5.jpg" alt=""></li>
+					</ul>
+					<ul id="indexes">
+						<li class="active"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<a id="prev" href="#"></a>
+					<a id="next" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<section id="main">
+			<div id="left_content">
+				<div class="category">
+					<div class="category_top">
+						<h2>
+							<a href="#">唯美图片</a>
+						</h2>
+						<a href="#" class="rt">更多</a>
+					</div>
+					<div class="colums">
+						<div class="photo-big">
+							<div class="photo-pic">
+								<a href="#"><img src="images/pic-m-1.jpg"/></a>
+							</div>
+							<h3><a href="#">比起繁华大都市更喜欢旧时的大街小巷</a></h3>
+							<div class="meta">
+								<span><a href="#">唯美</a></span>
+								<b class="border"></b>
+								<span>2015年12月4日</span>
+								<b class="border"></b>
+								<span>查看：71次</span>
+							</div>
+							<p>比起繁华大都市更喜欢旧时的大街小巷，这里有朴实的民风，有和睦的邻里，能看到小孩子……</p>
+						</div>
+						<div class="photo-small">
+							<ul>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/pic-s-1.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">美图分享：樱花语</a></h3>
+									<p>美丽的樱花语，不同的时期有不同的美景。By:儿歌多可怕…</p>
+								</li>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/pic-s-2.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">创意镜面蛋糕图片，美呆了</a></h3>
+									<p>INS用户olganoskovaa，她是一个蛋糕师，特别擅长做一些镜面蛋糕……</p>
+								</li>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/pic-s-3.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">法国艺术家Nathalie Choux</a></h3>
+									<p>法国艺术家Nathalie Choux的陶艺盘子，感觉简单又充满童趣，透露……</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="category">
+					<div class="category_top">
+						<h2>
+							<a href="#">插图图片</a>
+						</h2>
+						<a href="#" class="rt">更多</a>
+					</div>
+					<div class="colums">
+						<div class="photo-big">
+							<div class="photo-pic">
+								<a href="#"><img src="images/pic-m-2.jpg"/></a>
+							</div>
+							<h3><a href="#">韩国插画家Aeppol春装少女插画作品</a></h3>
+							<div class="meta">
+								<span><a href="#">插画</a></span>
+								<b class="border"></b>
+								<span>2015年11月14日</span>
+								<b class="border"></b>
+								<span>查看：269次</span>
+							</div>
+							<p>时尚的春装少女，来自韩国插画家Aeppol的插画作品。……</p>
+						</div>
+						<div class="photo-small">
+							<ul>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/pic-s-4.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">唯美手绘分享：但愿与你，</a></h3>
+									<p>但愿与你，独立又亲密，愿我们的爱相互交融而非单相思。……</p>
+								</li>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/pic-s-5.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">简单插画作品：极简主义，</a></h3>
+									<p>分享一组简单的卡通手机壁纸，极简主义，大道至简，美得很。</p>
+								</li>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/pic-s-6.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">超震撼的油画作品：宇宙·</a></h3>
+									<p>来自艺术家埃里克·奥尔森的油画作品，原来宇宙里的星球是如此</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="category">
+					<div class="category_top">
+						<h2>
+							<a href="#">美女图片</a>
+						</h2>
+						<a href="#" class="rt">更多</a>
+					</div>
+					<div class="colums">
+						<div id="banner_slider">
+							<ul>
+								<li>
+									<a href="#"><img src="images/slider-s-1.jpg"></a>
+									<p>性感的美女子——与情色无关</p>
+									<a href="#">美女</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/slider-s-2.jpg"></a>
+									<p>小清新气质女生大图：成熟是个很痛的词</p>
+									<a href="#">美女</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/slider-s-3.jpg"></a>
+									<p>伪文艺小资生活也是别有一番风味</p>
+									<a href="#">美女</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/slider-s-4.jpg"></a>
+									<p>小清新女生图片：当你难过的时候就抬头</p>
+									<a href="#">美女</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/slider-s-5.jpg"></a>
+									<p>教你如何穿出浓浓女人味</p>
+									<a href="#">美女</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/slider-s-6.jpg"></a>
+									<p>捕捉到一只冬日暖阳Aom</p>
+									<a href="#">美女</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/slider-s-7.jpg"></a>
+									<p>喜欢拍摄自己的大白腿的摄影家Eylul As</p>
+									<a href="#">美女</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/slider-s-8.jpg"></a>
+									<p>做一个更加完美的自己</p>
+									<a href="#">美女</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/slider-s-1.jpg"></a>
+									<p>性感的美女子——与情色无关</p>
+									<a href="#">美女</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/slider-s-2.jpg"></a>
+									<p>小清新气质女生大图：成熟是个很痛的词</p>
+									<a href="#">美女</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="category">
+					<div class="category_top">
+						<h2>
+							<a href="#">萌宠图片</a>
+						</h2>
+						<a href="#" class="rt">更多</a>
+					</div>
+					<div class="colums">
+						<div class="anim-l">
+							<ul>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/anim-1.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">爆红的喵届女神Smoothie，特</a></h3>
+									<p>最近爆红的喵届女神Smoothie，是一只英国长毛猫，主人Arvid </p>
+								</li>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/anim-3.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">会玩变装的兔星人，萌翻了</a></h3>
+									<p>有个爱玩变装的主人真是心累，好了，随便摆了个pose，让你拍吧。</p>
+								</li>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/anim-5.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">艺术家Flor Panichelli纸粘</a></h3>
+									<p>阿根廷艺术家Flor Panichelli用纸粘土为动物造型，自然干燥后</p>
+								</li>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/anim-7.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">来自英国的小矮马Ted，可爱爆</a></h3>
+									<p>爱上一匹矮马，可我的家里没有草原，来自英国的小矮马Ted，可爱
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="anim-r">
+							<ul>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/anim-2.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">萌宠成长记之最美的布偶猫</a></h3>
+									<p>萌宠成长记之最美的布偶猫，这只美丽的布偶猫其实是男孩子~虽然</p>
+								</li>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/anim-4.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">呆萌可爱的狐狸素材图片</a></h3>
+									<p>这位烟熏妆的美人叫栗栗，在家里排行老四，四五个月大的时候，</p>
+								</li>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/anim-6.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">很会粘人烟熏妆的美喵星人栗栗</a></h3>
+									<p>阿根廷艺术家Flor Panichelli用纸粘土为动物造型，自然干燥后</p>
+								</li>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/anim-8.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">柴犬重症患者请入，好想把脸埋</a></h3>
+									<p>柴犬重症患者请入，好想把脸埋进去，好想捏它的耳朵，揉它的脸！</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="category">
+					<div class="category_top">
+						<h2>
+							<a href="#">可爱图片</a>
+						</h2>
+						<a href="#" class="rt">更多</a>
+					</div>
+					<div class="colums">
+						<div class="photo-big">
+							<div class="photo-pic">
+								<a href="#"><img src="images/pic-m-3.jpg"/></a>
+							</div>
+							<h3><a href="#">可爱的樱桃小丸子主题咖啡店</a></h3>
+							<div class="meta">
+								<span><a href="#">可爱</a></span>
+								<b class="border"></b>
+								<span>2016年1月3日</span>
+								<b class="border"></b>
+								<span>查看：115次</span>
+							</div>
+							<p>作为樱桃小丸子的动漫迷，对于小丸子的主题咖啡馆那是非去不可的地方，看到都是有关于……</p>
+						</div>
+						<div class="photo-small">
+							<ul>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/pic-s-7.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">日本雕塑家田岛享央己的木</a></h3>
+									<p>迷之呆萌，来自日本雕塑家田岛享央己的木雕小动物，看着感觉</p>
+								</li>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/pic-s-8.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">暖暖的羊毛毡手作，沉睡的</a></h3>
+									<p>暖暖的羊毛毡手作，沉睡的狐狸花盒，被美到了！来自微博</p>
+								</li>
+								<li>
+									<div class="lf">
+										<a href="#">
+											<img src="images/pic-s-9.jpg" />
+										</a>
+									</div>
+									<h3><a href="#">艺术家Flor Panichelli纸粘</a></h3>
+									<p>阿根廷艺术家Flor Panichelli用纸粘土为动物造型，自然干燥后</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="right_content">
+				<div class="category_top">
+					<h2>关于我们</h2>
+				</div>
+				<div class="aside">
+					<ul>
+						<li>
+							<a href="#">
+								<i></i>
+								<span>
+									腾讯<br>
+									<b>Ting</b>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i></i>
+								<span>
+									新浪<br>
+									<b>Weibo</b>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i></i>
+								<span>
+									订阅<br>
+									<b>Subscription</b>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<div class="app">
+						<img src="images/ad2.jpg"/>
+					</div>
+				</div>
+				<div class="category_top">
+					<h2>排行榜</h2>
+				</div>
+				<ul class="rankings">
+					<li class="on">周排行</li>
+					<li>月排行</li>
+					<li>总排行</li>
+				</ul>
+				<div id="meta_ranking">
+					<ul class="week_ranking">
+						<li><span>1</span><a href="#">有拉花的咖啡才不孤单</a></li>
+						<li><span>2</span><a href="#">超可爱的动物插画温馨治愈系图片</a></li>
+						<li><span>3</span><a href="#">几个创意花盆，感觉挺有意思</a></li>
+						<li><span>4</span><a href="#">可爱大象俏皮手绘插画作品</a></li>
+						<li><span>5</span><a href="#">女生喜欢的漂亮的头饰图片</a></li>
+						<li><span>6</span><a href="#">可爱的海绵宝宝餐厅，真的是萌到爆</a></li>
+						<li><span>7</span><a href="#">猫咪和狗狗的甜蜜爱情，汪星人和喵</a></li>
+						<li><span>8</span><a href="#">日本艺术家山田緑关于猫咪的插画作</a></li>
+					</ul>
+					<ul class="month_ranking">
+						<li><span>1</span><a href="#">德国柏林的冬季，满眼美丽的雪景</a></li>
+						<li><span>2</span><a href="#">让世界充满绿色 享受绿意生活</a></li>
+						<li><span>3</span><a href="#">一杯咖啡 一本书 一段谈不完的话</a></li>
+						<li><span>4</span><a href="#">自然系少女组图：一抹最清新纯净的</a></li>
+						<li><span>5</span><a href="#">几米漫画图片 人心总是温暖如初的</a></li>
+						<li><span>6</span><a href="#">超级诱人的美食图片，口水忍不住往</a></li>
+						<li><span>7</span><a href="#">带着手绘插图去畅游世界的每一个角</a></li>
+						<li><span>8</span><a href="#">我的最爱 香甜的牛奶味道</a></li>
+					</ul>
+					<ul class="total_ranking">
+						<li><span>1</span><a href="#">萌萌哒治愈系彩铅动画作品</a></li>
+						<li><span>2</span><a href="#">超可爱的混血狗宝宝</a></li>
+						<li><span>3</span><a href="#">简单唯美的韩国插画图片 小温馨插</a></li>
+						<li><span>4</span><a href="#">一对非常可爱的日本狗兄弟</a></li>
+						<li><span>5</span><a href="#">闺蜜图片：这辈子,就是你让我感到</a></li>
+						<li><span>6</span><a href="#">梦想是夜空中最灿烂的那颗星</a></li>
+						<li><span>7</span><a href="#">插画分享：多姿多彩的青葱校园时光</a></li>
+						<li><span>8</span><a href="#">萌死人的狗狗忧郁的小眼神</a></li>
+					</ul>
+				</div>
+				<div class="category_top">
+					<h2>视频站</h2>
+				</div>
+				<div class="video">
+					<video src="video/birds.mp4" controls></video>
+				</div>
+				<div class="category_top">
+					<h2>本站推荐</h2>
+				</div>
+				<ul class="recommend">
+					<li>
+						<a href="#">韩国唯美插画女孩 两小无猜的小世界</a>
+						<p>爱情的萌芽，有可能会出现在小时候，是那两小无猜，青梅竹马的感</p>
+					</li>
+					<li>
+						<a href="#">浪漫唯美图片属于我们的流年时光</a>
+						<p>找寻属于我们的流年时光，那里有痛苦，有喜悦，有悲伤，有苦闷，</p>
+					</li>
+					<li>
+						<a href="#">所谓幸福只是单纯的拥有彼此就已满足了</a>
+						<p>也许，世界上最幸福的一件事，就是当你拥抱一个你爱的人时，他竟</p>
+					</li>
+					<li>
+						<a href="#">美丽星空 纯净土地 唯美的西藏布达拉宫</a>
+						<p>美丽的西藏，抬头总能看到满眼的星空，纯净的大地，朴素的人们。</p>
+					</li>
+					<li>
+						<a href="#">超萌的手绘可爱动物插画图片</a>
+						<p>超级萌的手绘动物插画图片，各个活灵活现，可爱到不行。</p>
+					</li>
+				</ul>
+				<div class="category_top">
+					<h2>动漫图片</h2>
+				</div>
+				<div class="aside-pic">
+					<p><a href="#"><img src="images/aside-1.jpg"/></a></p>
+					<a href="#">2016年4月新番《美少女战士Cryst</a>
+					<div class="meta">
+						<span><a href="#">动漫</a></span>
+						<b class="border"></b>
+						<span>2016年05月10日</span>
+						<b class="border"></b>
+						<span>查看：112次</span>
+					</div>
+					<p><a href="#"><img src="images/aside-2.jpg"/></a></p>
+					<a href="#">元气少女缘结神卡通动画图片</a>
+					<div class="meta">
+						<span><a href="#">动漫</a></span>
+						<b class="border"></b>
+						<span>2016年05月10日</span>
+						<b class="border"></b>
+						<span>查看：172次</span>
+					</div>
+				</div>
+			</div>
+			<div class="category_top clear" style="margin-top: 20px">
+				<h2>
+					<a href="#">留言板</a>
+				</h2>
+			</div>
+			<div class="message_board_show">
+
+			</div>
+			<div class="pages">
+				<ul>
+
+				</ul>
+			</div>
+			<div class="message_board">
+				<p class="lf">
+					<label>&nbsp;&nbsp;&nbsp;&nbsp;用户名：<input id="username" type="text" required/></label><br/><br/>
+					<label for="messages">留言内容：</label>
+					<textarea id="messages" name="msg" rows="8" cols="100"></textarea>
+					<br/><br/>
+					<button class="rt" id="btn">提交</button>
+				</p>
+			</div>
+		</section>
+		<footer id="footer">
+			<div class="footer_box">
+				<img src="images/xiumeilogo.png" alt="秀美图" class="rt">
+				<ul>
+					<li><a href="#">唯美图片</a>|</li>
+					<li><a href="#">小清新</a>|</li>
+					<li><a href="#">唯美意境图片</a>|</li>
+					<li><a href="#">sitemap</a>|</li>
+				</ul>
+				<p>秀美图(www.xiumeitu.net)致力于打造高品质图片大全第一站！</p>
+				<p>秀美图所收集的图片来源于网络，如有涉及版权等问题请联系我们。</p>
+				<div>Copyright © 2014-2015 <a href="#">秀美图</a> 版权所有 <a href="#">闽ICP备13009566号-3</a></div>
+			</div>
+		</footer>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

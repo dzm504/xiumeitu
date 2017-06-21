@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/regist.css"/>
+    <link rel="stylesheet" href="css/blog.css"/>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#">
+                <img src="images/logo.png"/>
+            </a>
+            <h1>欢迎注册</h1>
+        </div>
+    </header>
+    <div id="main_regist">
+        <canvas id="canvas" width="1920" height="950">
+        </canvas>
+        <div id="container">
+            <h1>用户注册</h1>
+            <div class="register">
+                <form action="#">
+                    <div class="form_group">
+                        <label>
+                            <span>用户名：</span>
+                            <input id="user_name" type="text" placeholder="请输入用户名" required autofocus pattern="^[a-zA-Z0-9]{3,8}$" />
+                        </label>
+                        <b id="utips"></b>
+                    </div>
+                    <div class="form_group">
+                        <label>
+                            <span>密码：</span>
+                            <input id="user_pwd" type="password" placeholder="请输入密码" required pattern="^[0-9]{6,12}$" />
+                        </label>
+                        <b id="ptips"></b>
+                    </div>
+                    <div class="form_group">
+                        <label>
+                            <span>确认密码：</span>
+                            <input id="repeat_pwd" type="password" placeholder="请再次输入密码"  required/>
+                        </label>
+                        <b id="rtips"></b>
+                    </div>
+                    <div class="form_group">
+                        <label>
+                            <span>电子邮件：</span>
+                            <input id="email" type="email" placeholder="请输入电子邮件" required  />
+                        </label>
+                        <b id="etips"></b>
+                    </div>
+                    <div class="form_group">
+                        <label>
+                            <span>验证码：</span>
+                            <input id="code" type="text" required />
+                        </label>
+                        <b id="ctips"></b><br/>
+                        <canvas id="verification" width="120" height="50"></canvas>
+                        <a href="#">看不清楚？换一张</a>
+                    </div>
+                    <div class="form_group">
+                        <label>
+                            <span></span>
+                            <input id="protolcals" type="checkbox"/>已阅读并同意《XXXXX使用协议》
+                        </label>
+                        <b id="btips"></b>
+                    </div>
+                    <div class="form_group">
+                        <input id="registBtn" type="button" value="注册"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer_box">
+            <img src="images/xiumeilogo.png" alt="秀美图" class="rt">
+            <ul>
+                <li><a href="#">唯美图片</a>|</li>
+                <li><a href="#">小清新</a>|</li>
+                <li><a href="#">唯美意境图片</a>|</li>
+                <li><a href="#">sitemap</a>|</li>
+            </ul>
+            <p>秀美图(www.xiumeitu.net)致力于打造高品质图片大全第一站！</p>
+            <p>秀美图所收集的图片来源于网络，如有涉及版权等问题请联系我们。</p>
+            <div>Copyright © 2014-2015 <a href="#">秀美图</a> 版权所有 <a href="#">闽ICP备13009566号-3</a></div>
+        </div>
+    </footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/regist.js"></script>
+</body>
+</html>
